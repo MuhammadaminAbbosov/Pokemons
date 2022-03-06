@@ -164,7 +164,7 @@ const Wrapper = styled.div`
       .progresses {
         display: flex;
         align-items: center;
-        gap: 5px;
+        justify-content: space-between;
         margin-bottom: 10px;
 
         .progress {
@@ -172,6 +172,9 @@ const Wrapper = styled.div`
           height: 4px;
           background-color: rgba(120, 255, 214, 0.3);
           border-radius: 2px;
+          @media (max-width: 700px) {
+            width: 150px;
+          }
 
           .progress__bar {
             height: 100%;
