@@ -13,7 +13,7 @@ const Pokemon = (props) => {
                 setTypes(response.data.types)
             })
     }
-    useEffect(getData, [])
+    useEffect(getData, [props])
     
     return (
         <Wrapper to={`/${props.id + 1}`}>
